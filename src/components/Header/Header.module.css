@@ -1,0 +1,92 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 8%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 9px 0px -3px rgba(247,245,245,0.75);
+}
+.header_text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800; 
+}
+.header_button{
+    padding: 2px 0px;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;    
+}
+.moonicon{
+    width: 10px;
+    margin-right: 10px; 
+    stroke:#ffd43b;
+}
+.moonicon :hover{
+    fill :#0f0fa8;
+   filter:  drop-shadow(-8px -8px 10px #0f0fa8 )  drop-shadow(2px -1px 0px #0f0fa8) 
+   drop-shadow(2px 2px 0px #0f0fa8)
+   drop-shadow(-1px 2px 0px #0f0fa8)
+}
+.sunicon{
+    width: 18px;
+    margin-right: 10px; 
+    transform: translate(0,4px);
+   fill:orangered
+}
+.sunicon:hover{
+    fill:#ffd43b
+}
+
+/* DarkMode Styles */
+.header__darkmode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 8%;
+    background-color:#2b3743;
+}
+.header_text__darkmode{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800; 
+    color:hsl(0, 0%, 100%)
+}
+.header_button__darkmode{
+    padding: 2px 0px;
+    text-transform: capitalize;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer; 
+    color:hsl(0, 0%, 100%)   
+}
+/* media Quries */
+@media(max-width:500px){
+    .header_text{
+        font-size: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800; 
+    }
+    .header_text__darkmode{
+        font-size: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 800; 
+        color:hsl(0, 0%, 100%)
+    }
+    .header_button{
+        padding: 2px 0px;
+        text-transform: capitalize;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        cursor: pointer; 
+        font-size: 14px;   
+    }
+    .header_button__darkmode{
+        padding: 2px 0px;
+        text-transform: capitalize;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        cursor: pointer; 
+        color:hsl(0, 0%, 100%)  ;
+        font-size: 14px;  
+    }
+}
